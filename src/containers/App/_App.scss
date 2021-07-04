@@ -1,0 +1,11 @@
+.App {
+  .content {
+    max-width: 1800px;
+    margin: auto;
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
