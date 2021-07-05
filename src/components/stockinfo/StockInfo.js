@@ -21,7 +21,9 @@ export const StockInfo = (props) => {
       <span>Source: {outstanding.source.title}</span>
       {outstanding.source.files.map((obj, idx) => (
         <span key={`${ticker}-src-${idx}`}>
-          <a href={obj.url}>{obj.text}</a>
+          <a href={obj.url} target="_blank" rel="noopener noreferrer">
+            {obj.text}
+          </a>
         </span>
       ))}
       <p>{outstanding.notes}</p>
