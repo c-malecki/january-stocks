@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { StockInfo, StockPicker, IntroBlock, Hypothesis } from "../../components/components_index";
+import {
+  StockInfo,
+  StockPicker,
+  IntroBlock,
+  Hypothesis,
+  Findings,
+} from "../../components/components_index";
 import { stocks } from "../../assets/stockdata";
 import { getCalcs } from "../../assets/util/getCalcs";
 
@@ -32,6 +38,8 @@ export const App = () => {
             data={stockData.stocks[stockData.curIdx]}
           />
         ) : null}
+
+        {stockData.stocks.length > 0 ? <Findings stocks={stockData.stocks} /> : null}
       </div>
     </div>
   );

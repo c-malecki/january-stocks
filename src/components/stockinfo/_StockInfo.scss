@@ -23,6 +23,11 @@
     flex-direction: column;
   }
 
+  .header-control {
+    display: flex;
+    flex-direction: row;
+  }
+
   .label {
     font-weight: bold;
   }
