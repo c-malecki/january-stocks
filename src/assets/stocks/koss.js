@@ -1,7 +1,7 @@
 export const koss = {
   ticker: "KOSS",
   outstanding: {
-    total: 8516823,
+    shares: 8516823,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -24,6 +24,9 @@ export const koss = {
       long: 41,
       short: 0,
       both: 0,
+    },
+    insiders: {
+      shares: 13440540,
     },
     etf: {
       total: 1,

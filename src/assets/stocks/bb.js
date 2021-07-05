@@ -1,7 +1,7 @@
 export const bb = {
   ticker: "BB",
   outstanding: {
-    total: 565505000,
+    shares: 565505000,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -23,6 +23,9 @@ export const bb = {
       long: 382,
       short: 9,
       both: 21,
+    },
+    insiders: {
+      shares: 5859648,
     },
     etf: {
       total: 43,

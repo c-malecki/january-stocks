@@ -1,7 +1,7 @@
 export const nok = {
   ticker: "NOK",
   outstanding: {
-    total: 5612418000,
+    shares: 5612418000,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -23,6 +23,9 @@ export const nok = {
       long: 824,
       short: 4,
       both: 22,
+    },
+    insiders: {
+      shares: 0,
     },
     etf: {
       total: 89,

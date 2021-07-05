@@ -1,7 +1,7 @@
 export const nakd = {
   ticker: "NAKD",
   outstanding: {
-    total: 842759571,
+    shares: 842759571,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -23,6 +23,9 @@ export const nakd = {
       long: 58,
       short: 1,
       both: 0,
+    },
+    insiders: {
+      shares: 0,
     },
     etf: {
       total: 0,

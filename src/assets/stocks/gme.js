@@ -1,7 +1,7 @@
 export const gme = {
   ticker: "GME",
   outstanding: {
-    total: 76815131,
+    shares: 76815131,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -28,6 +28,9 @@ export const gme = {
       long: 487,
       short: 31,
       both: 46,
+    },
+    insiders: {
+      shares: 7237237,
     },
     etf: {
       total: 75,

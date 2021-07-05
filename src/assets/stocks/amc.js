@@ -1,7 +1,7 @@
 export const amc = {
   ticker: "AMC",
   outstanding: {
-    total: 524173073,
+    shares: 524173073,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -24,6 +24,9 @@ export const amc = {
       long: 391,
       short: 14,
       both: 26,
+    },
+    insiders: {
+      shares: 10941702,
     },
     etf: {
       total: 31,

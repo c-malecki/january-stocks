@@ -1,7 +1,7 @@
 export const bbby = {
   ticker: "BBBY",
   outstanding: {
-    total: 104513541,
+    shares: 104513541,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -24,6 +24,9 @@ export const bbby = {
       long: 605,
       short: 6,
       both: 24,
+    },
+    insiders: {
+      shares: 5444984,
     },
     etf: {
       total: 78,

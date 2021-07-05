@@ -1,7 +1,7 @@
 export const expr = {
   ticker: "EXPR",
   outstanding: {
-    total: 66299774,
+    shares: 66299774,
     source: {
       title: "SEC.gov EDGAR",
       files: [
@@ -24,6 +24,9 @@ export const expr = {
       long: 188,
       short: 2,
       both: 11,
+    },
+    insiders: {
+      shares: 8680690,
     },
     etf: {
       total: 16,
