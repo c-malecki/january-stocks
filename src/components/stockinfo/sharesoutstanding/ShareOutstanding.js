@@ -1,18 +1,25 @@
 import React from "react";
 
 export const SharesOutstanding = (props) => {
+  const { outstanding, ticker } = props;
   return (
-    <div>
-      <h4>Shares Outstanding: {outstanding.total.toLocaleString()}</h4>
+    <div className="SharesOutstanding-container">
+      <h3>Shares Outstanding: {outstanding.shares.toLocaleString()}</h3>
+      <div>
+        <span className="label">Source: </span>
+        <span>{outstanding.source.title}</span>
+      </div>
 
-      <span>Source: {outstanding.source.title}</span>
-      {outstanding.source.files.map((obj, idx) => (
-        <span key={`${ticker}-src-${idx}`}>
-          <a href={obj.url} target="_blank" rel="noopener noreferrer">
-            {obj.text}
-          </a>
-        </span>
-      ))}
+      <ul>
+        {outstanding.source.files.map((obj, idx) => (
+          <li key={`${ticker}-src-${idx}`}>
+            <a href={obj.url} target="_blank" rel="noopener noreferrer">
+              {obj.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+
       <p>{outstanding.notes}</p>
     </div>
   );

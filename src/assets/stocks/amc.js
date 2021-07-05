@@ -37,6 +37,18 @@ export const amc = {
       shares: 44280771,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 4.36,
+      volume: 3653400,
+    },
+    {
+      date: "1/27/2021",
+      high: 19.9,
+      volume: 456850200,
+    },
+  ],
   experimental: {
     june302020: {
       high: 4.36,

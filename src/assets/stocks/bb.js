@@ -36,6 +36,18 @@ export const bb = {
       shares: 60773467,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 4.9,
+      volume: 4433200,
+    },
+    {
+      date: "1/27/2021",
+      high: 28.77,
+      volume: 372222600,
+    },
+  ],
   experimental: {
     june302020: {
       high: 4.9,

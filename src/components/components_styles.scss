@@ -1,3 +1,11 @@
-@import "./stockinfo/StockInfo";
 @import "./introblock/IntroBlock";
 @import "./hypothesis/Hypothesis";
+@import "./stockpicker/StockPicker";
+
+@import "./stockinfo/StockInfo";
+@import "./stockinfo/sharesoutstanding/SharesOutstanding";
+@import "./stockinfo/ownership/Ownership";
+@import "./stockinfo/funds/Funds.scss";
+@import "./stockinfo/float/Float";
+@import "./stockinfo/historical/Historical";
+@import "./stockinfo/insights/Insights";

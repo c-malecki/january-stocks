@@ -8,11 +8,12 @@ export const IntroBlock = () => {
         First created on 7/4/2021 - so it's very unrefined, from the stlye and formatting to my
         written explanations. Will be worked on and updated as I have the time to do so.
       </p>
+      <p>Last Updated: 7/5/2021</p>
       <p>
         This is an on-going collection of data, simple calculations, and thought experiments related
         to the January "meme" Stocks. I believe there are some interesting discrepencies between and
-        possible relationships to be drawn from the data around each of these tickers and their
-        observed correlated movements.
+        possible relationships to be drawn from the data around each of these and their observed
+        correlated movements.
       </p>
       <h2>Intro Stuff</h2>
       <p>
@@ -62,13 +63,9 @@ export const IntroBlock = () => {
       </a>
       <p>
         I've watched each of these stocks since January just via charting and daily market
-        activities and thought a lot about relationships I felt I could observe, but haven't tried
-        to quantify.
-      </p>
-      <p>
-        From these observations, I felt started to develop some ideas that then became unresearched
-        and unsupported theories. I finally decided to start aggregating some data and doing some
-        simple calculations to be able to see what I felt the charts and trends were indicating.
+        activities. I've thought a lot about relationships I feel I can observe and conceptualize,
+        but haven't made an effort to quantify data and explore these possible relationships until
+        recently.
       </p>
       <p>
         I had made a{" "}

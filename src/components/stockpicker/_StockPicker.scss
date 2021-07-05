@@ -1,0 +1,11 @@
+.StockPicker-container {
+  .picker-button {
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 4rem;
+    font-size: 1rem;
+  }
+  .active {
+    font-weight: bold;
+  }
+}

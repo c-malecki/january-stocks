@@ -36,6 +36,18 @@ export const nakd = {
       shares: 252302,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 0.67,
+      volume: 4786400,
+    },
+    {
+      date: "1/27/2021",
+      high: 1.5,
+      volume: 2198250000,
+    },
+  ],
   experimental: {
     june302020: {
       high: 0.67,

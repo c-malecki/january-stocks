@@ -36,6 +36,18 @@ export const nok = {
       shares: 284112480,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 4.41,
+      volume: 3653400,
+    },
+    {
+      date: "1/27/2021",
+      high: 9.79,
+      volume: 1123003300,
+    },
+  ],
   experimental: {
     june302020: {
       high: 4.41,

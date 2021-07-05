@@ -41,6 +41,18 @@ export const gme = {
       shares: 9927099,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 4.51,
+      volume: 3889000,
+    },
+    {
+      date: "1/27/2021",
+      high: 380,
+      volume: 93396700,
+    },
+  ],
   experimental: {
     june302020: {
       high: 4.51,

@@ -2,17 +2,40 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  max-width: 400px;
   border: 1px solid black;
   border-radius: 1rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   background-color: #fff;
+
+  .StockInfo-col {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  .StockInfo-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .StockInfo-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label {
+    font-weight: bold;
+  }
 
   h2,
   h3,
   h4,
   h5 {
-    margin: 4px 0;
+    margin: 0.5rem 0;
+  }
+
+  ul {
+    list-style: none;
   }
 
   p {

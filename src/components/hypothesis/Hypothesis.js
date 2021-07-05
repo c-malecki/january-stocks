@@ -6,15 +6,15 @@ export const Hypothesis = () => {
     <div className="hypothesis">
       <h2>My Hypothesis</h2>
       <p>
-        Until very recently (started this page on 7/4/2021), each of these stocks showed a
-        consistent statistical correlation in their movements relative to each other. There have
-        been some intra-day breaks lately for some of these stocks, but they still seem to settle
-        into some form of correlation. For example, AMC broke the trend at the end of May and for
-        the first couple days of June, running up to as high as $70 while none of these others had
-        relative gains anywhere near as great for the time period. Since then, AMC has appeared to
-        settle back into a correlation with GME, but at a higher floor than previously. EXPR also
-        recently had a bit of a breakout movement, though no where near as dramatic as AMC. Shortly
-        after, BBBY had a jump as well.
+        Until very recently, each of these stocks showed a consistent statistical correlation in
+        their movements relative to each other (observable in the chart below). There have been some
+        intra-day breaks lately for some of these stocks, but they still seem to settle into some
+        form of correlation. For example, AMC broke the trend at the end of May and for the first
+        couple days of June, running up to as high as $70 while none of these others had relative
+        gains anywhere near as great for the time period. Since then, AMC has appeared to settle
+        back into a correlation with GME, but at a higher floor than previously. EXPR also recently
+        had a bit of a breakout movement, though no where near as dramatic as AMC. Shortly after,
+        BBBY had a jump as well.
       </p>
       <p>
         I make note of this because the past month shows some variance in correlation in small

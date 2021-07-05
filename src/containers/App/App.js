@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { StockInfo, IntroBlock, Hypothesis } from "../../components/components_index";
+import { StockInfo, StockPicker, IntroBlock, Hypothesis } from "../../components/components_index";
 import { stocks } from "../../assets/stockdata";
 import { getCalcs } from "../../assets/util/getCalcs";
 
 export const App = () => {
-  const [stockData, setStockData] = useState(null);
+  const [stockData, setStockData] = useState({
+    stocks: [],
+    curIdx: 0,
+  });
   useEffect(() => {
     const computations = stocks.map((obj) => getCalcs(obj));
-    setStockData(computations);
+    setStockData((prevState) => ({
+      ...prevState,
+      stocks: computations,
+    }));
   }, [setStockData]);
 
   return (
@@ -15,15 +21,17 @@ export const App = () => {
       <div className="content">
         <IntroBlock />
         <Hypothesis />
-        {stockData ? (
-          <div className="row">
-            {stockData.map((obj) => (
-              <StockInfo key={obj.ticker} data={obj} />
-            ))}
-          </div>
-        ) : (
-          ""
-        )}
+
+        {stockData.stocks.length > 0 ? (
+          <StockPicker setStockData={setStockData} stockData={stockData} />
+        ) : null}
+
+        {stockData.stocks.length > 0 ? (
+          <StockInfo
+            key={stockData.stocks[stockData.curIdx].ticker}
+            data={stockData.stocks[stockData.curIdx]}
+          />
+        ) : null}
       </div>
     </div>
   );

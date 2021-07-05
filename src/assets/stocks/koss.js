@@ -37,6 +37,18 @@ export const koss = {
       shares: 196419,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 1.43,
+      volume: 26600,
+    },
+    {
+      date: "1/27/2021",
+      high: 127.45,
+      volume: 456850200,
+    },
+  ],
   experimental: {
     june302020: {
       high: 1.43,

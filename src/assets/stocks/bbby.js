@@ -37,6 +37,18 @@ export const bbby = {
       shares: 39170418,
     },
   },
+  historical: [
+    {
+      date: "6/30/2020",
+      high: 11.35,
+      volume: 8988300,
+    },
+    {
+      date: "1/27/2021",
+      high: 53.9,
+      volume: 90316800,
+    },
+  ],
   experimental: {
     june302020: {
       high: 11.35,
