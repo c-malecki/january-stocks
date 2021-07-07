@@ -1,25 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { StockContext } from "../../context/provider";
+import { Link } from "react-router-dom";
 
 export const StockPicker = (props) => {
-  const { setStockData, stockData } = props;
-  const { stocks } = stockData;
-  const handleChangeIdx = (idx) => {
-    setStockData((prevState) => ({
-      ...prevState,
-      curIdx: idx,
-    }));
-  };
+  const { stocks } = useContext(StockContext);
+  const { symbol } = useParams();
 
   return (
     <div className="StockPicker-container">
       {stocks.map((el, idx) => (
-        <button
-          className={`picker-button ${stockData.curIdx === idx ? `active` : ``}`}
+        <Link
+          className={`${symbol === el.ticker ? `active` : ``}`}
           key={`${el.ticker}-b-${idx}`}
-          onClick={() => handleChangeIdx(idx)}
+          to={`/stocks/${el.ticker}`}
         >
           {el.ticker}
-        </button>
+        </Link>
       ))}
     </div>
   );

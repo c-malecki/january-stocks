@@ -1,45 +1,26 @@
-import React, { useState, useEffect } from "react";
-import {
-  StockInfo,
-  StockPicker,
-  IntroBlock,
-  Hypothesis,
-  Findings,
-} from "../../components/components_index";
-import { stocks } from "../../assets/stockdata";
-import { getCalcs } from "../../assets/util/getCalcs";
+import React from "react";
+import { Navigation } from "../../components/components_index";
+import { Route, Switch, Redirect } from "react-router-dom";
+
+import { StocksPage } from "../StocksPage/StocksPage";
+import { FindingsPage } from "../FindingsPage/FindingsPage";
+import { HypothesisPage } from "../HypothesisPage/HypothesisPage";
+import { IntroPage } from "../IntroPage/IntroPage";
 
 export const App = () => {
-  const [stockData, setStockData] = useState({
-    stocks: [],
-    curIdx: 0,
-  });
-  useEffect(() => {
-    const computations = stocks.map((obj) => getCalcs(obj));
-    setStockData((prevState) => ({
-      ...prevState,
-      stocks: computations,
-    }));
-  }, [setStockData]);
-
   return (
     <div className="App">
+      <Navigation />
       <div className="content">
-        <IntroBlock />
-        <Hypothesis />
-
-        {stockData.stocks.length > 0 ? (
-          <StockPicker setStockData={setStockData} stockData={stockData} />
-        ) : null}
-
-        {stockData.stocks.length > 0 ? (
-          <StockInfo
-            key={stockData.stocks[stockData.curIdx].ticker}
-            data={stockData.stocks[stockData.curIdx]}
-          />
-        ) : null}
-
-        {stockData.stocks.length > 0 ? <Findings stocks={stockData.stocks} /> : null}
+        <Switch>
+          <Route exact path="/" component={IntroPage} />
+          <Route exact path="/hypothesis" component={HypothesisPage} />
+          <Route exact path="/stocks">
+            <Redirect to="/stocks/GME" />
+          </Route>
+          <Route path="/stocks/:symbol" component={StocksPage} />
+          <Route exact path="/findings" component={FindingsPage} />
+        </Switch>
       </div>
     </div>
   );

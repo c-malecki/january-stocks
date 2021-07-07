@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StockContext } from "../../context/provider";
 
-export const Findings = (props) => {
-  const { stocks } = props;
+export const FindingsPage = (props) => {
+  const { stocks } = useContext(StockContext);
   const smallestFloat = [...stocks].sort(
     (a, b) => parseInt(a.float.percentOfOutstanding) - parseInt(b.float.percentOfOutstanding)
   );
@@ -25,7 +26,7 @@ export const Findings = (props) => {
       parseInt(a.experimental.results.janPeakPercent)
   );
   return (
-    <div className="Findings-container">
+    <div className="FindingsPage-container">
       <h2>Findings</h2>
       <div className="Findings-row">
         <div className="Findings-col">
